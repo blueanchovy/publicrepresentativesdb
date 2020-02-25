@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #842962;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.container {
+    padding: 8px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 8px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<h1><i>Public Representative Database</i></h1>
+<p></p>
+<h4>Login :</h4>
+
+<form action="/Signin.php">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>E-mail</b></label>
+    <input type="text" placeholder="email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>  
+  </div>
+
+</form>
+<p></p>
+<p><h3><i>or</i></h3></p>
+
+<form action="/Signup.php" style="border:1px solid #ccc" method="post>
+  <div class="container">
+    <h3>Sign Up</h3>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    
+     <label for="FirstName"><b>First Name</b></label>
+    <input type="text" placeholder="FirstName" name=" FirstName" required>
+
+    
+    <label for="LastName"><b>LastName</b></label>
+    <input type="text" placeholder="Enter LastName" name="LastName" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+    
+    <label for="Age"><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" name="Age" required>
+    
+    <label for="Sex"><b>Sex</b></label>   
+	<input type="radio" name="gender" value="Male" > Male 
+	<input type="radio" name="gender" value="Female"> Female
+	<input type="radio" name="gender" value="Transgender"> Transgender <br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw_repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw_repeat" required><br>
+    
+    <label for="EDC"><b>EDC</b></label>
+    <input type="text" placeholder="EDC" name=" EDC" required>
+    
+    <label for="Acc"><b>Acc</b></label>
+    <input type="text" placeholder="Enter Acc" name=" Acc" required>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+
+</body>
+</html>
